@@ -5,4 +5,5 @@ func main() {
 	var content string = read(filePath)
 	var numbers = toNumSlice(content)
 	decode(numbers)
+	//decodeEcart(numbers)
 }

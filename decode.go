@@ -34,6 +34,16 @@ func decode(numbers []int64) {
 	}
 }
 
+func decodeEcart(numbers []int64) {
+	var ecarts []int64
+	for index, item := range numbers {
+		if index != 0 {
+			ecarts = append(ecarts, item-numbers[index-1])
+		}
+	}
+	decode(ecarts)
+}
+
 /*
 	Takes an INT between 0 and 25, return letter from the alphabet
 */
