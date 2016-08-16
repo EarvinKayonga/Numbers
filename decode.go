@@ -9,7 +9,7 @@ import (
 
 var alphabet = []string{"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"}
 
-func process(data string) []int64 {
+func toNumSlice(data string) []int64 {
 	var numbers []int64
 	var tabString = strings.Split(data, " ")
 	if len(tabString) > 0 {
