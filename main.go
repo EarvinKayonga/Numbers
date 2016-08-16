@@ -1,11 +1,7 @@
 package main
 
-import (
-	"os"
-	"fmt"
-)
-
 func main() {
-	var filePath string = os.Args[0]
-	fmt.Println(filePath)
+	var filePath string = getFilePath()
+	var content string = read(filePath)
+	process(content)
 }
